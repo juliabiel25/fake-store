@@ -1,0 +1,8 @@
+{
+  "short_name": "Fake Store",
+  "name": "Example online store web app",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "rgb(247, 246, 246)"
+}

@@ -1,0 +1,84 @@
+.checkout {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.checkout h2 {
+  padding: 0 2em;
+}
+
+.cart-content {
+  flex: 1;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.cart-control {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.checkout-item {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 2em;
+  padding: 2em;
+}
+
+.checkout-item button {
+  width: max-content;
+}
+
+.checkout-item-img {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  width: 10vw;
+  min-width: 10vw;
+  min-height: 100%;
+  border-radius: var(--rounded-corners);
+}
+
+.checkout-item-img>img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.checkout-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 20em;
+}
+
+.empty-cart-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.empty-cart-info a {
+  border: 2px solid var(--dark);
+  border-radius: var(--rounded-corners);
+  padding: 1.5em 3em;
+}
+
+.empty-cart-info a:hover, .empty-cart-info a:active {
+  border: 2px solid var(--dark);
+  background-color: var(--dark);
+  color: #fff;
+  border-radius: var(--rounded-corners);
+  padding: 1.5em 3em;
+}

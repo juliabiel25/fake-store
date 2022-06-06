@@ -1,0 +1,61 @@
+.loading-container {
+    width: 100vw;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.loading {
+    --duration: 0.5s;
+    --width: 4em;
+    width: var(--width);
+    min-width: max-content;
+    height: 100%;
+    gap: 0.1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 40vh;
+}
+
+@keyframes up-down {
+    0% {
+        margin-bottom: 0;
+    }
+
+    50% {
+        margin-bottom: 0.5em;
+    }
+
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+
+.dot1, .dot2, .dot3, .dot4 {
+    width: calc(var(--width)/5);
+    height: calc(var(--width)/5);
+    border-radius: 50%;
+    background-color: var(--dark);
+    animation-name: up-down;
+    animation-duration: var(--duration);
+    animation-iteration-count: infinite;
+}
+
+.dot2 {
+    animation-delay: calc(var(--duration)/4);
+}
+
+.dot3 {
+    animation-delay: calc(var(--duration)/4 * 2);
+}
+
+.dot4 {
+    animation-delay: calc(var(--duration)/4 * 3);
+}

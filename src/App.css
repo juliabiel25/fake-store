@@ -1,0 +1,150 @@
+* {
+  --rounded-corners: 0.4em;
+  --dark: rgb(15, 18, 33);
+  --contrast-dark: rgb(240, 123, 123);
+}
+
+.App {
+  display: flex;
+  color: var(--dark);
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: rgb(247, 246, 246);
+}
+
+header {
+  box-sizing: border-box;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  min-height: 12em;
+  height: fit-content;
+  width: min(70vw, 100rem);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4em;
+  padding: 2em 3em 3em 3em;
+}
+
+.logo-link {
+  min-width: max-content;
+  font-size: xx-large;
+}
+
+main {
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20vh;
+}
+
+.main-container {
+  flex: 1;
+  width: min(80vw, 80rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.checkout-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-btn {
+  font-size: 20px;
+}
+
+button, .checkout-btn {
+  box-sizing: border-box;
+  border: 2px solid var(--dark);
+  padding: 0.5em 1.2em;
+  text-decoration: none;
+  border-radius: var(--rounded-corners);
+}
+
+.item-count {
+  position: relative;
+  bottom: 1em;
+  bottom: 1em;
+  right: 0.5em;
+  background-color: var(--contrast-dark);
+  color: var(--dark);
+  width: 1em;
+  height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.btn-dark {
+  background-color: var(--dark);
+  color: white;
+  transition: background-color 0.1s linear, border-color 0.1s linear;
+}
+
+.btn-dark:hover {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+
+.btn-dark:active {
+  background-color: var(--dark);
+  color: white;
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.scroll-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 32px;
+  width: min(5rem, 15vw);
+  height: min(5rem, 15vw);
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  transition: width 0.2s ease-out, height 0.2s ease-out, font-size 0.2s ease-out;
+}
+
+.scroll-up-btn:hover {
+  width: 6rem;
+  height: 6rem;
+  font-size: 34px;
+}
+
+.scroll-up-btn p {
+  padding-bottom: 10px;
+}
+
+footer {
+  min-height: 30vh;
+  color: #fff;
+  background-color: var(--dark);
+  padding: 2em 3em 3em 3em;
+  box-sizing: border-box;
+}
